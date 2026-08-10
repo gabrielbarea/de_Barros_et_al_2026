@@ -165,3 +165,4 @@ For questions, comments, or bug reports, please contact:
 **Gabriel E. B. de Barros**
 Email: gbareabarros@gmail.com
 Laboratory of Paleobiology and Astrobiology, Federal University of São Carlos, Brazil
+Github: https://github.com/gabrielbarea/de_Barros_et_al_2026
