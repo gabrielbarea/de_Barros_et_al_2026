@@ -72,7 +72,7 @@ plot_paleomap <- function(time_ma) {
     
     # Generate the map plot
     ggplot() +
-        geom_sf(data = reconstructed_robinson, fill = "grey", color = "black") +
+        geom_sf(data = reconstructed_robinson, fill = "black", color = "black") +
         geom_sf(data = data_sf, aes(color = as.factor(koppen)), size = 2, shape = 15, alpha = 0.08) +
         geom_sf(data = gps_sf, aes(color = "red"), shape = 16, size = 2, alpha = 1) +
         coord_sf(crs = robinson_proj) +
