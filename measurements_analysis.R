@@ -32,10 +32,10 @@ measurements <- measurements %>%
     )
 
 # Filter data by time slice for temporal analyses
-measurements_280 <- measurements %>% filter(Time == 280)  # Late Cisuralian
-measurements_300 <- measurements %>% filter(Time == 300)  # LCa-EPe
-measurements_320 <- measurements %>% filter(Time == 320)  # MCa
-measurements_340 <- measurements %>% filter(Time == 340)  # ECa
+measurements_280 <- measurements %>% filter(Time == 280)  # LCi
+measurements_300 <- measurements %>% filter(Time == 300)  # LPn-EPe
+measurements_320 <- measurements %>% filter(Time == 320)  # LMi-EPn
+measurements_340 <- measurements %>% filter(Time == 340)  # MMi
 measurements_360 <- measurements %>% filter(Time == 360)  # EMi
 
 #### Summary Statistics Functions ####
@@ -154,7 +154,7 @@ gam_global <- gam(logEW ~ s(Abs_Paleolat), data = measurements)
 summary(gam_global)
 
 #### Temporal Patterns: Size vs. Absolute Paleolatitude by Time Slice ####
-# Middle Carboniferous (320 Ma)
+# Late Mississippian-Early Pennsylvanian (320 Ma)
 ggplot(measurements_320, aes(y = logEW, x = Abs_Paleolat, color = Setting)) +
     geom_point() +
     geom_smooth(method = "lm", color = "red") +
@@ -172,7 +172,7 @@ summary(gam_320)
 cor.test(measurements_320$Abs_Paleolat, measurements_320$logEW,
          use = "complete.obs", method = "spearman")
 
-# Late Carboniferous–Early Permian (300 Ma)
+# Late Pennsylvanian–Early Permian (300 Ma)
 ggplot(measurements_300, aes(y = logEW, x = Abs_Paleolat, color = Setting)) +
     geom_point() +
     geom_smooth(method = "lm", color = "red") +
