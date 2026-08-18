@@ -467,9 +467,9 @@ dados <- bind_cols(metadata, occ)
 dados <- dados %>%
     mutate(Time = recode(Time,
                          "Early Mississippian" = 360,
-                         "Early Carb." = 340,
-                         "Mid Carb." = 320,
-                         "Late Carb.-Early Perm." = 300,
+                         "Middle Mississippian" = 340,
+                         "Late Miss.-Early Penn." = 320,
+                         "Late Penn.-Early Perm." = 300,
                          "Late Cisuralian" = 280))
 
 occ.cols <- names(occ)
@@ -496,9 +496,9 @@ dados <- bind_cols(metadata, occ)
 dados <- dados %>%
     mutate(Time = recode(Time,
                          "Early Mississippian" = 360,
-                         "Early Carb." = 340,
-                         "Mid Carb." = 320,
-                         "Late Carb.-Early Perm." = 300,
+                         "Middle Mississippian" = 340,
+                         "Late Miss.-Early Penn." = 320,
+                         "Late Penn.-Early Perm." = 300,
                          "Late Cisuralian" = 280))
 
 setting_time <- dados %>%
