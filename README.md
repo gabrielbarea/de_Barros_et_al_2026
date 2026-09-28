@@ -1,6 +1,6 @@
 # README: Supporting Data and R Code
 
-**Manuscript title:** *Did the Latitudinal Diversity Gradient hold during the Late Palaeozoic Ice Age? Using trace fossils from continental environments to assess diversity and arthropod size patterns*
+**Manuscript title:** *Did the Latitudinal Diversity Gradient hold during the Late Palaeozoic Ice Age?*
 
 **Authors:** Gabriel E. B. de Barros, Nicholas J. Minter, Daniel Sedorko, Mírian L. A. F. Pacheco
 
